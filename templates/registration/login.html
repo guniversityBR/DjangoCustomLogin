@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+	<form class="form-signin" method="post" autocomplete="off">
+		{% csrf_token %}
+		<h1 class="h3 mb-3 font-weight-normal">Área do Cliente</h1>
+		<br/>
+		<img class="mb-4" src="https://storage.googleapis.com/jacalculei/newlayout/assets/images/jacalculei_contabilidade_online.png" alt=""  />
+
+
+		<label for="username" class="sr-only">UserName</label>
+		<input  id="username" name="username" class="form-control" placeholder="Informe seu Usuário" required autofocus>
+			<br>
+		<label for="password" class="sr-only">Senha</label>
+		<input type="password" id="password" name="password" class="form-control" placeholder="Informe sua senha" required>
+
+
+		<button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+
+	</form>
+
+{% endblock %}
